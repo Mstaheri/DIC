@@ -8,6 +8,11 @@ namespace DIC
 {
     public class KaveNegar : ISms
     {
+        private readonly Translation _t;
+        public KaveNegar(Translation t)
+        {
+            _t = t;
+        }
         public void SendSms(string message)
         {
             
